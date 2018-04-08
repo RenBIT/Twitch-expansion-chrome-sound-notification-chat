@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Twitch voice chat",
+  "permissions": [
+    "notifications",
+    "https://www.twitch.tv/*",
+      "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.twitch.tv/*"
+      ],
+      "js": [
+        "jquery.min.js",
+        "voice.js"
+      ],
+      "run_at": "document_end"
+    }        
+  ],
+  "background": {
+    "scripts": [
+      "messeger.js","options.js"
+    ]
+    
+  },
+    "browser_action": {
+      "default_title": "Расширение",
+      "default_icon" : "48.png",
+      "default_popup": "popup.html"
+      }
+}

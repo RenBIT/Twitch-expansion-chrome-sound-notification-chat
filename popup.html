@@ -1,0 +1,95 @@
+﻿<script src="jquery.min.js"></script>
+<script src="options.js"> </script>
+<link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+<style>
+    html{
+        margin: 1px;
+
+    }
+    body {
+        margin: 0px;
+        user-select: none;  
+        /* width: 200px; */
+        height: 100px; 
+        background:#17141f;
+        color: white;
+    }
+
+    .row {
+        /* margin: 0 auto; */
+        padding-left: 10px;
+       
+    }
+
+    .logo {
+        font-family: 'Chicle', cursive;
+        text-align: center;
+        font-size: 28px;
+        background:  #4b367c;
+        color: white;
+        text-shadow: 1px 1px 1px #000;
+        margin-bottom: 0px;
+        padding: 5px;
+        z-index: 2;
+    }
+
+    .on {
+        border-left: 2px solid #dbd9df;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+
+    }
+
+    .voice {
+        border-left: 2px solid #dbd9df;
+        padding: 5px;
+        font-size: 14px;
+        margin-bottom: 10px;
+        
+    }
+
+    .range {
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid #dbd9df;
+        padding: 10px;
+        z-index: 2;
+        border-bottom: 0px solid #dbd9df;
+    margin: 0;
+    }
+    .title{
+        background:#70609b;
+     text-align: center;
+     font-size: 15px; 
+     border-bottom:1px solid white;
+     margin-bottom:10px; 
+     font-weight:500;
+    }
+ 
+</style>
+<div class="logo">
+    Twitch <br>voice chat
+</div>
+<div class="title" >Настройки</div>
+<div class="content">
+    <div class="row">
+        <div class="on">
+            <label>
+                <input class="on_check" type="checkbox" /> Включить</label>
+        </div>
+
+
+        <div class="voice">
+            <label>
+                <input class="voice_check" type="checkbox" /> Голос</label>
+        </div>
+        
+      
+    </div> 
+</div>
+<div class="range">
+            Громкость <span class="vl"></span>
+           <br>
+            <input class="value" type="range" min="0" max="1" step="0.1" value="1">
+        </div>
